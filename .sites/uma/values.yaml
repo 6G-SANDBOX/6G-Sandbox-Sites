@@ -34,14 +34,29 @@ site_s3_server:
   force_path_style: "true"
 
 site_one_templates:
-  k8s_medium: 126
-  tn_bastion: 41
-  vm_xs: 42
-  vm_s: 56
-  vm_m: 57
-  vm_l: 58
-  vm_xl: 59
-  ueransim: 71
+  k8s_medium:
+    id: 126
+  tn_bastion:
+    id: 41
+    image_id: 106
+  vm_xs:
+    id: 42
+    image_id: 28
+  vm_s:
+    id: 56
+    image_id: 28
+  vm_m:
+    id: 57
+    image_id: 28
+  vm_l:
+    id: 58
+    image_id: 28
+  vm_xl:
+    id: 59
+    image_id: 28
+  ueransim:
+    id: 71
+    image_id: 103
 
 site_jenkins_user: "jenkins-master"
 site_jenkins_ssh_public_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPfCNCGjsdwCfgfbO2a5if82K/ldXaSkXDmB/HhiZXh6 jenkins@jenkins-master"
