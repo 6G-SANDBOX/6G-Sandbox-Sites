@@ -9,6 +9,8 @@
 
 site_hypervisor: one #one, vmware, etc ...
 site_default_network_id: 0
+site_public_network_id: 280
+site_public_ip: "150.214.47.156"
 site_networks:
   - name: External Network   # Representative Name
     id: 0                    # ID from OpenNebula Networks List
@@ -30,31 +32,16 @@ site_s3_server:
   force_path_style: "true"
 
 site_one_templates:
-  oneKE:
-    id: 76
-  tn_bastion:
-    id: 41
-  vm_xs:
-    id: 42
-    disk_id: 28
-    disk_size: 10000
-  vm_s:
-    id: 56
-    disk_id: 28
-    disk_size: 15000
-  vm_m:
-    id: 57
-    disk_id: 28
-    disk_size: 20000
-  vm_l:
-    id: 58
-    disk_id: 28
-    disk_size: 40000
-  vm_xl:
-    id: 59
-    disk_id: 28
-    disk_size: 40000
+  k8s_medium: 126
+  tn_bastion: 41
+  vm_xs: 42
+  vm_s: 56
+  vm_m: 57
+  vm_l: 58
+  vm_xl: 59
+  ueransim: 71
 
 site_jenkins_ssh_public_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCCweY1fDXtrxltSW36ln2Ktk8V0E6TDfqsjEBfW6gAqco2k5BnosCVVm7kWCYOmvYa94e1yMA/j9H037TQBiUu9iQHjxaxR4rs/1plH3XyIYItPWdwKft22QrQBUBlLUcrCdII/adpdFnPzZux5xU34Ytm7XjSAikVlwv4TIYcWC3J9TGvmA4YaoIwcgJEwtaGCuUhkjn03CLx3YB++0bGnsicpw8fi0EGOfoNvRexGRXAE/Ogad+8RF3mWyVl+CYhcdbEOcNfdbp9XyZY9WT8yyimzSlp3gADmA5e5gnlXUjnpiHlrjVrqLt2JOc7QD5pjO92IPR6M9XC6Sz+piG255+FrVBK5KaPcQi6Lo3BGl1sbWFte/UM/TvIRLhJGYEZjpaqn6g+Bh99votEs7a+L7J+YeR3qCLnmaUPIXNue4yz/zJpEQ5Aj+RFybybinK5SV8pUG+H6blJa3TZPD4em7sZ0HLg/VyHiILiIndCuylem0HpcgcI8h/vWSw+syU= jenkins"
 site_jenkins_script_base64: "IyEvYmluL2Jhc2gKc3NoLWtleWdlbiAtdCByc2EgLU4gIiIgLWYgfi8uc3NoL2lkX3JzYQplY2hvIFBhc3N3b3JkQXV0aGVudGljYXRpb24geWVzID4gL2V0Yy9zc2gvc3NoZF9jb25maWcuZC9QYXNzd29yZEF1dGhlbnRpY2F0aW9uLmNvbmYKZWNobyAic3NoLXJzYSBBQUFBQjNOemFDMXljMkVBQUFBREFRQUJBQUFCZ1FDQ3dlWTFmRFh0cnhsdFNXMzZsbjJLdGs4VjBFNlREZnFzakVCZlc2Z0FxY28yazVCbm9zQ1ZWbTdrV0NZT212WWE5NGUxeU1BL2o5SDAzN1RRQmlVdTlpUUhqeGF4UjRycy8xcGxIM1h5SVlJdFBXZHdLZnQyMlFyUUJVQmxMVWNyQ2RJSS9hZHBkRm5Qelp1eDV4VTM0WXRtN1hqU0Fpa1Zsd3Y0VElZY1dDM0o5VEd2bUE0WWFvSXdjZ0pFd3RhR0N1VWhram4wM0NMeDNZQisrMGJHbnNpY3B3OGZpMEVHT2ZvTnZSZXhHUlhBRS9PZ2FkKzhSRjNtV3lWbCtDWWhjZGJFT2NOZmRicDlYeVpZOVdUOHl5aW16U2xwM2dBRG1BNWU1Z25sWFVqbnBpSGxyalZycUx0MkpPYzdRRDVwak85MklQUjZNOVhDNlN6K3BpRzI1NStGclZCSzVLYVBjUWk2TG8zQkdsMXNiV0Z0ZS9VTS9UdklSTGhKR1lFWmpwYXFuNmcrQmg5OXZvdEVzN2ErTDdKK1llUjNxQ0xubWFVUElYTnVlNHl6L3pKcEVRNUFqK1JGeWJ5YmluSzVTVjhwVUcrSDZibEphM1RaUEQ0ZW03c1owSExnL1Z5SGlJTGlJbmRDdXlsZW0wSHBjZ2NJOGgvdldTdytzeVU9IGplbmtpbnMiID4+IC9yb290Ly5zc2gvYXV0aG9yaXplZF9rZXlzCnN5c3RlbWN0bCByZXN0YXJ0IHNzaGQK"
 site_one_bastion_default_password: "UMAoperator"
+site_domain: "6gsandbox.uma.internal"
