@@ -41,19 +41,19 @@ site_one_templates:
     image_id: 106
   vm_xs:
     id: 42
-    image_id: 28
+    image_id: 3
   vm_s:
     id: 56
-    image_id: 28
+    image_id: 3
   vm_m:
     id: 57
-    image_id: 28
+    image_id: 3
   vm_l:
     id: 58
-    image_id: 28
+    image_id: 3
   vm_xl:
     id: 59
-    image_id: 28
+    image_id: 3
   ueransim:
     id: 71
     image_id: 103
