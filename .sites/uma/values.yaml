@@ -9,18 +9,17 @@
 
 site_hypervisor: one #one, vmware, etc ...
 site_public_ip: "150.214.47.156"
-site_networks:
-  default:                   # Representative Name
-    id: 0                    # ID from OpenNebula Networks List
-    if_name: br_281_srv      # Phisical interface that support this Network
-  ntn:
-    id: 13
-    if_name: br_120
-  public:
-    id: 280
-    if_name: br_281_srv
 
-site_vxlan_if: br_281_srv     # It must be the name of the interface on which the new vxlan will be created
+# Already created VNets
+site_networks_id:
+  default: 0
+  ntn: 13
+  public: 200
+
+# Interface for newly created VXLANs
+site_vxlan_if: br_281_srv
+#site_ntn_if:
+
 site_clusters: [0, 100, 101, 102]
 
 site_s3_server:
