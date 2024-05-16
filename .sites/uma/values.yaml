@@ -34,9 +34,9 @@ site_s3_server:
 
 site_one_templates:
   k8s_medium:
-    1_27:
+    127:
       id: 201
-    1_29:
+    129:
       id: 202
   tn_bastion:
     id: 41
