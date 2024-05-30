@@ -57,8 +57,8 @@ site_one_templates:
     id: 59
     image_id: 3
   ueransim:
-    id: 71
-    image_id: 103
+    id: 96
+    image_id: 123
 
 site_jenkins_ssh_user: "jenkins"
 site_jenkins_ssh_public_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPfCNCGjsdwCfgfbO2a5if82K/ldXaSkXDmB/HhiZXh6 jenkins@jenkins-master"
