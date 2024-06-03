@@ -33,7 +33,7 @@ site_s3_server:
   force_path_style: "true"
 
 site_one_templates:
-  k8s_medium:
+  oneKE:
     127:
       id: 201
     129:
