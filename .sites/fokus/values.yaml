@@ -6,3 +6,50 @@
 #
 # SITE: FOKUS
 #
+
+site_hypervisor: one #one, vmware, etc ...
+site_public_ip: ""
+
+# Already created VNets
+site_networks_id:
+  default: 0
+  ntn: 7
+  # public: ""
+  starlink: 8
+
+# Interface for newly created VNets
+site_vxlan_if: br-mgmt
+
+
+site_clusters: [0]
+
+site_s3_server:
+  endpoint: "http://192.168.248.148:9000"
+  bucket: "trial-networks"
+  region: "main"
+  skip_requesting_account_id: "true"
+  skip_credentials_validation: "true"
+  skip_metadata_api_check: "true"
+  skip_region_validation: "true"
+  force_path_style: "true"
+
+site_one_templates:
+  oneKE:
+    127:
+      id: ""           # <--- Please Fill
+    129:
+      id: ""           # <--- Please Fill
+  tn_bastion:
+    id: ""             # <--- Please Fill
+    image_id: ""       # <--- Please Fill
+  vm_kvm:
+    id: ""             # <--- Please Fill
+    image_id: ""       # <--- Please Fill
+  ueransim:
+    id: 11             # <--- Please Fill
+    image_id: ""       # <--- Please Fill
+
+site_jenkins_ssh_user: "jenkins"
+site_jenkins_ssh_public_key: "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCCweY1fDXtrxltSW36ln2Ktk8V0E6TDfqsjEBfW6gAqco2k5BnosCVVm7kWCYOmvYa94e1yMA/j9H037TQBiUu9iQHjxaxR4rs/1plH3XyIYItPWdwKft22QrQBUBlLUcrCdII/adpdFnPzZux5xU34Ytm7XjSAikVlwv4TIYcWC3J9TGvmA4YaoIwcgJEwtaGCuUhkjn03CLx3YB++0bGnsicpw8fi0EGOfoNvRexGRXAE/Ogad+8RF3mWyVl+CYhcdbEOcNfdbp9XyZY9WT8yyimzSlp3gADmA5e5gnlXUjnpiHlrjVrqLt2JOc7QD5pjO92IPR6M9XC6Sz+piG255+FrVBK5KaPcQi6Lo3BGl1sbWFte/UM/TvIRLhJGYEZjpaqn6g+Bh99votEs7a+L7J+YeR3qCLnmaUPIXNue4yz/zJpEQ5Aj+RFybybinK5SV8pUG+H6blJa3TZPD4em7sZ0HLg/VyHiILiIndCuylem0HpcgcI8h/vWSw+syU= jenkins"
+site_admin_ssh_public_key: ""
+site_domain: "int.6gsb.xgpg.de"

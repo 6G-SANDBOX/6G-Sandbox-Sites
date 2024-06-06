@@ -16,9 +16,9 @@ site_networks_id:
   ntn: 13
   public: 200
 
-# Interface for newly created VXLANs
+# Interface for newly created VNets
 site_vxlan_if: br_281_srv
-#site_ntn_if:
+
 
 site_clusters: [0, 100, 101, 102]
 
@@ -44,21 +44,6 @@ site_one_templates:
   vm_kvm:
     id: 97
     image_id: 125
-  vm_xs:
-    id: 42
-    image_id: 3
-  vm_s:
-    id: 56
-    image_id: 3
-  vm_m:
-    id: 57
-    image_id: 3
-  vm_l:
-    id: 58
-    image_id: 3
-  vm_xl:
-    id: 59
-    image_id: 3
   ueransim:
     id: 96
     image_id: 124
