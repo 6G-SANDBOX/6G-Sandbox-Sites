@@ -32,21 +32,28 @@ site_s3_server:
   skip_region_validation: "true"
   force_path_style: "true"
 
-site_one_templates:
+site_available_components:
+  tn_init:
+  tn_bastion:
+    template_id: 41
+    image_id: 106
+  tn_vxlan:
+  vnet:
   oneKE:
     127:
-      id: 201
+      template_id: 201
     129:
-      id: 202
-  tn_bastion:
-    id: 41
-    image_id: 106
+      template_id: 202
+  open5gs:
   vm_kvm:
-    id: 97
+    template_id: 97
     image_id: 125
   ueransim:
-    id: 96
+    template_id: 96
     image_id: 124
+  tsn:
+    quantity: 1
+    ttl: ""
 
 site_jenkins_ssh_user: "jenkins"
 site_jenkins_ssh_public_key: "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIPfCNCGjsdwCfgfbO2a5if82K/ldXaSkXDmB/HhiZXh6 jenkins@jenkins-master"
