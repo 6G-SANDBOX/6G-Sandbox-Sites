@@ -33,20 +33,24 @@ site_s3_server:
   skip_region_validation: "true"
   force_path_style: "true"
 
-site_one_templates:
+site_available_components:
+  tn_init:
+  tn_bastion:
+    template_id:        # <--- Please Fill
+    image_id:           # <--- Please Fill
+  tn_vxlan:
+  vnet:
   oneKE:
     127:
-      id: ""           # <--- Please Fill
+      template_id: ""   # <--- Please Fill
     129:
-      id: ""           # <--- Please Fill
-  tn_bastion:
-    id: ""             # <--- Please Fill
-    image_id: ""       # <--- Please Fill
+      template_id: ""   # <--- Please Fill
+  open5gs:
   vm_kvm:
-    id: ""             # <--- Please Fill
+    template_id: ""    # <--- Please Fill
     image_id: ""       # <--- Please Fill
   ueransim:
-    id: 11             # <--- Please Fill
+    template_id: ""    # <--- Please Fill
     image_id: ""       # <--- Please Fill
 
 site_jenkins_ssh_user: "jenkins"
