@@ -8,7 +8,7 @@
 site_domain: "sample.domain.cloud"
 site_public_ip: "15.32.62.12"    # Needed for VPN connections to the tn_bastion
 
-site_hypervisor: one           # one, vmware, etc ...
+site_hypervisor: "one"           # one, vmware, etc ...
 site_clusters: [0]             # In OpenNebula components, list of cluster IDs where VNets are created.
 
 # In OpenNebula components, VNet ID of some relevant Virtual Networks previously created
@@ -19,7 +19,7 @@ site_networks_id:
   # starlink:           # Currently unused. VNet of Starlink Network
 
 # In OpenNebula components, Network Interface on the host where new VNets can be created. Can be a physical NIC, but a previoiusly created linux bridge is preferable.
-site_vxlan_if: br-mgmt
+site_vxlan_if: "br-mgmt"
 
 # Optional admin ssh key to access to any TN component
 site_admin_ssh_public_key: "ssh-rsa ... admin"       
@@ -47,22 +47,22 @@ site_s3_server:
 site_available_components:
   tn_init:
   tn_bastion:
-    template_id: ""     # <--- Please Fill
-    image_id: ""        # <--- Please Fill
+    template_id: 0     # <--- Please Fill
+    image_id: 0        # <--- Please Fill
   tn_vxlan:
   vnet:
   oneKE:                # Two OneKE Versions available
     127:                # Deprecated, try to prefer OneKE v1.29 better
-      template_id: ""   # <--- Please Fill
+      template_id: 0   # <--- Please Fill
     129:
-      template_id: ""   # <--- Please Fill
+      template_id: 0   # <--- Please Fill
   open5gs:
   vm_kvm:
-    template_id: ""    # <--- Please Fill
-    image_id: ""       # <--- Please Fill
+    template_id: 0    # <--- Please Fill
+    image_id: 0       # <--- Please Fill
   ueransim:
-    template_id: ""    # <--- Please Fill
-    image_id: ""       # <--- Please Fill
+    template_id: 0    # <--- Please Fill
+    image_id: 0       # <--- Please Fill
   # tsn:               # If your site does not have this, ignore them
   #   quantity: 1
   #   ttl: ""
