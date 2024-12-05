@@ -47,8 +47,8 @@ site_s3_server:
 site_available_components:
   tn_init:
   tn_bastion:
-    template_id:        # <--- Please Fill
-    image_id:           # <--- Please Fill
+    template_id: ""     # <--- Please Fill
+    image_id: ""        # <--- Please Fill
   tn_vxlan:
   vnet:
   oneKE:                # Two OneKE Versions available
