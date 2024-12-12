@@ -9,11 +9,8 @@ Repository with unique information for each 6G-SANDBOX site. It use composed of 
 <summary>Table of Contents</summary>
 
 - [Site Directory Structure](#site-directory-structure)
-- [How to encrypt your site files](#how-to-encrypt-your-site-files)
-  - [1. Install ansible-core](#1-install-ansible-core)
-  - [2. Set a password to encrypt/decrypt](#2-set-a-password-to-encryptdecrypt)
-  - [3. Encrypt your site file](#3-encrypt-your-site-file)
-- [Development Guidelines](#development-guidelines)
+- [Development guidelines](#development-guidelines)
+- [How to encrypt your site file](#how-to-encrypt-your-site-file)
 
 </details>
 
@@ -30,16 +27,24 @@ The [`.dummy_site/core.yaml`](.dummy_site/core.yaml) file serves as a template o
 
 The files belonging to each site are encrypted with a passphrase using the [Ansible vault](https://docs.ansible.com/ansible/latest/vault_guide/index.html) utility.
 
-## How to encrypt your site files
+## Development guidelines
+
+The recommended way of using this repository is to fork it or to make your own branch with your site directory.
+
+## How to encrypt your site file
 
 This section aims to serve as a guide on how to fill your site's `core.yaml` file.
 
-#### 1. Install ansible-core
+### 1. Install ansible-core <!-- omit in toc -->
 
 To use the `ansible-vault` tool, the full *ansible* libraries and binaries are not needed. You can [install ansible](https://docs.ansible.com/ansible/latest/installation_guide/installation_distros.html) in your prefered way, but package `ansible-core` is enough.
 If you do not wish to install *ansible* anywhere, remember it is already installed on the Jenkins VM so you can use it from there.
 
-#### 2. Set a password to encrypt/decrypt
+```bash
+apt install ansible-core
+```
+
+### 2. Set a password to encrypt/decrypt <!-- omit in toc -->
 
 Your password should be a random string of characters stored in a file.
 
@@ -59,7 +64,7 @@ Your password should be a random string of characters stored in a file.
 >
 > You can use any [online password generator](https://www.random.org/strings/) to create it.
 
-#### 3. Encrypt your site file
+### 3. Encrypt your site file <!-- omit in toc -->
 
 ```sh
 ansible-vault encrypt <site_name>/core.yaml --vault-password-file=path/to/password.txt
@@ -73,12 +78,7 @@ where:
 Running this command will **replace** the original contents of the file with the encrypted text.
 
 With the same syntaxt, you can use other `ansible-vault` commands to edit your encrypted file:
-- `ansible-vault edit`; Opens the file to correct its unencrypted content.
-- `ansible-vault decrypt`; Decrypts the content of the file, replacing the encrypted text with the unencrypted one.
-
-# Development guidelines
-Despite the main branch having a directory for all known sites, we are aware that development might involve a lot of minor commits that can blur the repo for other developers.
-
-Thus, the recommended way of using this repository is to fork it or to make your own branch with your site directory, where you can do as many commits as you want.
+- `ansible-vault edit`: open the file to correct its unencrypted content.
+- `ansible-vault decrypt`: decrypt the content of the file, replacing the encrypted text with the unencrypted one.
 
 <p align="right"><a href="#readme-top">Back to top&#x1F53C;</a></p>
