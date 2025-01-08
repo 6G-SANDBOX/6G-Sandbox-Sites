@@ -6,6 +6,7 @@
 #
 
 site_hypervisor: "one"           # one, vmware, etc ...
+site_onegate: 10.11.32.103       # NEW: In OpenNebula sites, IP for the onegate and oneflow endpoint
 site_clusters: [0]             # In OpenNebula components, list of cluster IDs where VNets are created.
 
 # In OpenNebula components, VNet ID of some relevant Virtual Networks previously created
