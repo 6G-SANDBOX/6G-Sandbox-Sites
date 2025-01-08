@@ -6,7 +6,7 @@
 #
 
 site_hypervisor: "one"           # one, vmware, etc ...
-site_onegate: 10.11.32.103       # NEW: In OpenNebula sites, IP for the onegate and oneflow endpoint
+site_onegate: "10.11.32.103"       # NEW: In OpenNebula sites, IP for the onegate and oneflow endpoint
 site_clusters: [0]             # In OpenNebula components, list of cluster IDs where VNets are created.
 
 # In OpenNebula components, VNet ID of some relevant Virtual Networks previously created
@@ -27,7 +27,7 @@ site_domain: "sample.domain.cloud"
 site_public_ip: "12.34.56.78"    # Public endpoint for VPN connections to the tn_bastion
 site_ports_digits: 5             # NEW: Digits of the ports to be exposed. All ports need to have the same number of digits (generally 4 or 5)
 site_ports_prefix: 398           # NEW: Common digits of the ports to be exposed. "site_ports_digits - site_ports_prefix.length" is the number of digits deduced from tn_bastion's default IP
-site_dns: 10.11.28.107           # NEW: Optional comma-separated list of DNS Servers used by the tn_bastion to resolve all name resolution queries. If unspecified, "8.8.8.8,1.1.1.1" will be used
+site_dns: "10.11.28.107"           # NEW: Optional comma-separated list of DNS Servers used by the tn_bastion to resolve all name resolution queries. If unspecified, "8.8.8.8,1.1.1.1" will be used
 
 # Optional admin ssh key to access to any TN component
 site_admin_ssh_public_key: "ssh-rsa ... admin"       
