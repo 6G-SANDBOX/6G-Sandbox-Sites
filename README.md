@@ -2,7 +2,9 @@
 
 # 6G-Sandbox-Sites <!-- omit in toc -->
 
-Repository with unique information for each 6G-SANDBOX site. It use composed of different yaml files with different variables usable by the [6G-Library](https://github.com/6G-SANDBOX/6G-Library) components.
+Repository with unique information for each 6G-SANDBOX site. It is composed of different yaml files with different variables usable by the [6G-Library](https://github.com/6G-SANDBOX/6G-Library) components, encrypted via `ansible-vault`.
+> [!TIP]
+> Your site name should be a simple string made of lowercase characters and numbers
 
 
 <details>
