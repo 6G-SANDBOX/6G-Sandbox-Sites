@@ -63,7 +63,7 @@ site_available_components:
   oneKE:                # Dictionary, allowing different OneKE versions. Currently only v1.29 is supported
     129:
       template_id: 0   # <--- Please Fill
-  open5gs:
+  open5gs_k8s:
   vm_kvm:
     template_id: 0    # <--- Please Fill
     image_id: 0       # <--- Please Fill
