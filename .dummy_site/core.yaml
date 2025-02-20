@@ -60,7 +60,11 @@ site_available_components:
   tn_vxlan:
   vnet:
   oneKE:                # Dictionary, allowing different OneKE versions. Currently only v1.29 is supported
-    129:
+    "129":
+      template_id: 0   # <--- Please Fill
+    "131":
+      template_id: 0   # <--- Please Fill
+    "131a":
       template_id: 0   # <--- Please Fill
   open5gs_k8s:
   vm_kvm:
