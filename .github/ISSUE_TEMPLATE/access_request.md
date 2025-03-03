@@ -2,7 +2,7 @@
 name: Request Access
 about: Request to join to 6G-SANDBOX organization
 title: "[Access Request] Your GitHub Username"
-labels: ["access-request"]
+labels: ["request-access"]
 assignees: ["CarlosAndreo", "alvarocurt"]
 ---
 
