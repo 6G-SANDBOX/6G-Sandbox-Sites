@@ -1,26 +1,23 @@
 ---
 name: Request Access
-about: Request to join the 6G-SANDBOX Sites Contributors team
+about: Request to join to 6G-SANDBOX organization
 title: "[Access Request] Your GitHub Username"
 labels: ["access-request"]
 assignees: ["CarlosAndreo", "alvarocurt"]
 ---
 
-# Request Access to 6G-SANDBOX Sites Contributors
+# Request Access to 6G-SANDBOX organization
 
 ## Applicant Information
+
 - **GitHub Username:** @your-username
 - **Full Name (Optional):** Your Name
 - **Company/Organization:** Your Company
 
 ## Request Details
-I would like to request access to the [**6G-SANDBOX Sites Contributors**](https://github.com/orgs/6G-SANDBOX/teams/6gsandbox-sites-contributors) team.
 
-**Reason for Request:**
-(Briefly explain why you need access, e.g., contributing to documentation, development, or maintenance.)
+I would like to request access to the [**6G-SANDBOX**] organization.
 
 ## Additional Notes
-(Any extra details or questions for the admins.)
 
----  
-**🔔 Admins:** @CarlosAndreo @alvarocurt
+(Any extra details or questions for the admins)
