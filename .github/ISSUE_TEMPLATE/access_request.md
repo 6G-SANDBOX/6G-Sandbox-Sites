@@ -16,7 +16,7 @@ assignees: ["CarlosAndreo", "alvarocurt"]
 
 ## Request Details
 
-I would like to request access to the [**6G-SANDBOX**] organization.
+I would like to request access to the **6G-SANDBOX** organization.
 
 ## Additional Notes
 
