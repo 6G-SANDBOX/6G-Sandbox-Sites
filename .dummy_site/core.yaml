@@ -76,6 +76,7 @@ site_available_components:
   # nokia_radio:
   #   cp_ip: 10.10.10.200
   #   up_ip: 10.10.10.201
+  #   quantity: 1
   #
   # ue_stf:
   #   origin: "http://10.11.32.205:7100"
