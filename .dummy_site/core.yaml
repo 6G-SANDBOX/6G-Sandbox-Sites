@@ -73,9 +73,6 @@ site_available_components:
   ueransim:
     template_id: 0    # <--- Please Fill
     image_id: 0       # <--- Please Fill
-  # tsn:               # If your site does not have this, ignore them
-  #   quantity: 1
-  #   ttl: ""
   # nokia_radio:
   #   cp_ip: 10.10.10.200
   #   up_ip: 10.10.10.201
