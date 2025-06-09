@@ -24,6 +24,8 @@ site_networks_id:   # In OpenNebula sites, VNet ID of some relevant Virtual Netw
 
 # In OpenNebula sites, Network Interface on the host where new VNets can be created. Can be a physical NIC, but a previoiusly created linux bridge is preferable.
 site_vxlan_if: "br-mgmt"
+site_vxlan_mtu: 1500         # MTU for the virtual vxlan NIC in the hosts
+site_vxlan_guest_mtu: 1450   # MTU for the virtual vxlan NIC in the VMs. VXLAN encapsulation adds 50-54 overhead bytes to the packet
 
 # Optional admin ssh key to be able to access any TN component. Privileged user in most compoents will be "jenkins"
 site_admin_ssh_public_key: "ssh-rsa ... admin"       
