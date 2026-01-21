@@ -15,7 +15,7 @@ site_dns: "10.11.28.107"                   # Optional comma-separated list of DN
 
 site_hypervisor: "one"           # one, vmware, etc ...
 site_onegate: "10.11.32.103"     # In OpenNebula sites, IP address for the onegate and oneflow endpoint. Required for service components like the OneKE.
-site_clusters: 0              # In OpenNebula sites, list of cluster IDs where VNets are created.
+site_clusters: [0]              # In OpenNebula sites, list of cluster IDs where VNets are created.
 
 site_networks_id:   # In OpenNebula sites, VNet ID of some relevant Virtual Networks previously created
   default: 0            # Vnet with IPs accesible to the user. E.g. the subnet where the ONE frontend is
